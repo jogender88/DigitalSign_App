@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <!-- <script src="./signang.js"></script> -->
+    <script src="./mobile.js"></script>
+
+    <style>
+        #canvas {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            background-color: #FFF;
+        }
+        
+        #d {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id=" d ">
+        <canvas drawing width="500 " height="300 " id="canvas "></canvas>
+        <div ng-controller="myCtrl ">
+            <button type="button " ng-click="clearcan() ">Clear</button>
+            <button type="button " ng-click="Save() ">Save</button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

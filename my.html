@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <style>
+        .d {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d">
+
+        <canvas id="myCanvas" width="500" height="300" style="border:1px solid #d3d3d3;"></canvas>
+        <br>
+        <button onclick="clearcan()">clear</button>
+        <button onclick="saveSign()">saveSign</button>
+        <label>Enter pen size</label>
+        <input type="number" value="2" id="pensize" max="12" min="2">
+        <input type="color" id="colorpicker" name="color" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#bada55">
+    </div>
+
+    <!-- <input type="text" pattern="^#+([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$" value="#bada55" id="hexcolor"></input> -->
+    <script src="./sign.js"></script>
+</body>
+
+</html>
